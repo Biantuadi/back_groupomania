@@ -1,7 +1,7 @@
 const User = require("../models/user.model");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-require("dotenv").config({ path: "./config/.env" });
+require("dotenv").config({ path: "./.env" });
 const fs = require("fs");
 
 // Authentication middleware
@@ -58,7 +58,6 @@ exports.login = (req, res, next) => {
     })
     .catch((err) => res.status(500).json({ error: err }));
 };
-
 
 //? `\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 

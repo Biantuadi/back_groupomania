@@ -1,4 +1,4 @@
-require("dotenv").config( { path: "./config/.env" } );
+require("dotenv").config( { path: "./.env" } );
 
 const mongoose = require("mongoose");
 const username = process.env.MONGODB_USERNAME;
@@ -11,4 +11,4 @@ mongoose
   .then(() => console.log("MongoDB Connected 👌"))
   .catch((err) => console.log("MongoDB Error 😤: " + err));
 
-module.exports = mongoose;
+module.exports = mongoose;  

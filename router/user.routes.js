@@ -11,7 +11,7 @@ router.post("/signup", userCtrl.signup);
 router.post("/login", userCtrl.login);
 
 // User routes
-router.get("/", auth, userCtrl.getAllUsers);
+router.get("/", userCtrl.getAllUsers);
 router.get("/:id", auth, userCtrl.getUser);
 router.put("/:id", auth, userCtrl.updateUser);
 router.delete("/:id", userCtrl.deleteUser);
